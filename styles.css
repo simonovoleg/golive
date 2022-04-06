@@ -1,0 +1,136 @@
+/* Step 1 */
+/* Show Inline Style */
+
+/* Step 2 */
+/* 
+    Override default HTML styling 
+    
+    font-family
+    font-size
+    color
+
+    font-style
+    text-decoration
+*/
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rebeccapurple; /* rgb and hex */
+}
+
+/* All child elements will inherit */
+ol {
+    font-size: 14px;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(112, 1, 1);
+}
+
+/* Step 3 */
+/* 
+    CSS Inheritance
+    make <li> within <ul> non-italic
+    add separate ul and then add ol > ul > li
+*/
+
+
+ol > li > ul > li { /* this one is optional */
+    font-style: normal;
+    color: brown;
+}
+
+/* Step 4 */
+/* 
+    Separate .css file
+    <link rel="stylesheet" href="styles.css">
+*/
+
+/* Step 5 */
+/* 
+    Custom Classes 
+    text-align
+    img size    
+    px, em, rem, %, vw, vh
+    absolute units (px) vs relative units (all else)
+    EM: Relative to the parent element
+    REM: Relative to the root element (HTML tag)
+    %: Relative to the parent element
+    VW: Relative to the viewport’s width
+    VH: Relative to the viewport’s height
+*/
+
+.centeredParagraph {
+    text-align: center;
+}
+
+.justifiedParagraph {
+    text-align:justify;
+}
+
+.thumbnail {
+    width: 300px;
+}
+
+/* Step 6 */
+/* 
+    Background Color
+    Background img
+    background size
+*/
+
+.bgimg {
+    background-image: url("./assets/back.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.bgcolor {
+    background-color: rgb(197, 193, 193);
+}
+
+/* Step 7 */
+/* 
+    Box model
+
+    in-line vs box elements
+    border
+    padding
+    margin
+*/
+
+.borderedParagraph {
+    border: rebeccapurple 2px dotted;
+}
+
+.smallPadding {
+    padding: 20px;
+}
+
+/* introduce span */
+.unevenPadding {
+    padding: 20px 100px 200px 200px;
+}
+
+.medMargin {
+    margin: 50px;
+}
+
+/* this is the place to show chrome inspector */
+
+/* Step 8 */
+/* 
+    CSS state properties
+    Other selectors and !important
+    animations
+    sounds
+*/
+
+a:hover {
+    font-size: 24px;
+}
+
